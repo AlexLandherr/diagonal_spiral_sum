@@ -1,5 +1,6 @@
 #include "include/functions.h"
 #include <iostream>
+#include <cstdint>
 
 /*
 Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:
@@ -16,6 +17,9 @@ What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed 
 */
 
 int main() {
+    uint64_t spiral_side_length = 1001;
+    std::cout << "The sum of the numbers on the diagonals in a " << spiral_side_length << " by " << spiral_side_length << " spiral is:" << '\n';
+    std::cout << func::diagonal_spiral_sum(spiral_side_length) << '\n';
 
     return 0;
 }
